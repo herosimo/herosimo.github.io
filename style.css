@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5vw;
+    letter-spacing: 5px;
+    color: #ffffff;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.background {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    background-color: #1e90ff;
+}
+
+#particles-js {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0.8;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.hello {
+    text-transform: capitalize;
+    margin-bottom: -5%;
+}
+
+.heading span{
+    font-size: 3.5em;
+    text-transform: capitalize;
+}
+
+.mail {
+    display: flex;
+    margin-top: 2%;
+    width: auto;
+    justify-content: center;
+}
+
+.mail i {
+    width: auto;
+    font-size: 0.7em;
+}
+
+.mail a{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1.5px solid #ffffff;
+    padding: 0 2%;
+    margin: 2%;
+    width: auto;
+}
+
+.mail a:hover {
+    background-color: #2f3542;
+    color: #ffffff;
+    border: 1.5px solid #2f3542;;
+    font-weight: normal;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social a {
+    margin: 4% 2%;
+    width: auto;
+    height: auto;
+}
+
+.social i {
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+.social i:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: #2f3542;;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.social i:hover {
+    color: #2f3542;
+}
+
+.social i:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    padding-bottom: 3%;
+
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 0.9em;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+footer i {
+    font-weight: normal;
+    font-size: 0.6em;
+    width: auto;
+    height: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) and (orientation: portrait) {
+    * {
+        font-size: 5vw;
+    }
+} 

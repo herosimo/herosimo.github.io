@@ -10,7 +10,7 @@
     font-size: 2.5vw;
     letter-spacing: 5px;
     color: #ffffff;
-    
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -53,7 +53,7 @@ article {
     margin-bottom: -5%;
 }
 
-.heading span{
+.heading span {
     font-size: 3.5em;
     text-transform: capitalize;
 }
@@ -70,19 +70,20 @@ article {
     font-size: 0.7em;
 }
 
-.mail a{
+.mail a {
     text-decoration: none;
     text-transform: uppercase;
     border: 1.5px solid #ffffff;
     padding: 0 2%;
-    margin: 2%;
+    margin: 0 2%;
     width: auto;
 }
 
 .mail a:hover {
     background-color: #2f3542;
     color: #ffffff;
-    border: 1.5px solid #2f3542;;
+    border: 1.5px solid #2f3542;
+    ;
     font-weight: normal;
 }
 
@@ -111,7 +112,8 @@ article {
     height: 2px;
     left: 0%;
     position: absolute;
-    background: #2f3542;;
+    background: #2f3542;
+    ;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -120,9 +122,9 @@ article {
     color: #2f3542;
 }
 
-.social i:hover:after { 
-    width: 100%; 
-    left: 0; 
+.social i:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 footer {
@@ -152,4 +154,4 @@ footer i {
     * {
         font-size: 5vw;
     }
-} 
+}

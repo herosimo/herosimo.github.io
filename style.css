@@ -1,90 +1,90 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Raleway&display=swap");
+
 * {
     padding: 0;
     margin: 0;
-    height: 100%;
-    width: 100%;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
     position: relative;
 
-    font-family: 'Teko', sans-serif;
-    font-size: 2.5vw;
-    letter-spacing: 5px;
-    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    color: #4f5d67;
+    background-color: #243441;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-}
-
-.background {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -3;
-    background-color: #1e90ff;
-}
-
-#particles-js {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    opacity: 0.8;
-}
-
-article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: auto;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.hello {
-    text-transform: capitalize;
-    margin-bottom: -5%;
+body.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    overflow-x: hidden;
+    margin-left: 5%;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.heading h1 {
+    font-family: "Lobster Two", cursive;
+    font-size: 10rem;
+    color: #243441;
+    text-shadow: 1px 1px 8px #0a1014, -1px -1px 8px #4f5d67;
 }
 
 .heading span {
-    font-size: 3.5em;
-    text-transform: capitalize;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
 }
 
-.mail {
-    display: flex;
-    margin-top: 2%;
-    width: auto;
-    justify-content: center;
+.heading a {
+    color: #4f5d67;
+    text-decoration: underline;
 }
 
-.mail i {
-    width: auto;
-    font-size: 0.7em;
+.heading ul {
+    display: block;
+    margin-top: 2rem;
+    text-align: left;
 }
 
-.mail a {
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1.5px solid #ffffff;
-    padding: 0 2%;
-    margin: 0 2%;
-    width: auto;
+.heading ul li {
+    padding: 0.25rem;
 }
 
-.mail a:hover {
-    background-color: #2f3542;
-    color: #ffffff;
-    border: 1.5px solid #2f3542;
-    ;
-    font-weight: normal;
+.heading .back {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 8px #0a1014, -1px -1px 8px #4f5d67;
+}
+
+.heading .back:hover {
+    box-shadow: 1px 1px 8px #0a1014 inset, -1px -1px 8px #4f5d67 inset;
 }
 
 .social {
@@ -93,65 +93,47 @@ article {
     justify-content: center;
 }
 
-.social a {
-    margin: 4% 2%;
-    width: auto;
-    height: auto;
-}
-
-.social i {
-    font-weight: normal;
-    font-size: 1.25em;
-}
-
-.social i:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 0%;
-    position: absolute;
-    background: #2f3542;
-    ;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.social i:hover {
-    color: #2f3542;
-}
-
-.social i:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-footer {
+.social span {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    height: auto;
-    padding-bottom: 3%;
 
-    font-family: 'Caesar Dressing', cursive;
-    font-size: 0.9em;
     font-weight: normal;
-    letter-spacing: 0;
+    font-size: 1.5rem;
+    color: #4f5d67;
+
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #243441;
+
+    box-shadow: 1px 1px 8px #0a1014, -1px -1px 8px #4f5d67;
 }
 
-footer i {
-    font-weight: normal;
-    font-size: 0.6em;
-    width: auto;
-    height: auto;
+.social span:hover {
+    box-shadow: 1px 1px 8px #0a1014 inset, -1px -1px 8px #4f5d67 inset;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) and (orientation: portrait) {
-    * {
-        font-size: 5vw;
+    body.projects {
+        margin-left: 10%;
+    }
+
+    .heading {
+        width: 90%;
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    .heading span {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        width: 100%;
     }
 }

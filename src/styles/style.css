@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Shadows+Into+Light&display=swap");
+
+:root {
+  --heading: #454545;
+  --text: #5a5a5a;
+  --border: #45454580;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--text);
+  font-size: 1.1vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+  color: var(--heading);
+}

@@ -1,11 +1,22 @@
 import * as React from "react";
 
+import Banner from "../components/Banner";
+import Sidebar from "../components/Sidebar";
+import { layout, article } from "../styles/layout.module.scss";
+import "../styles/reset.css";
+import "../styles/style.css";
+
 // markup
 const IndexPage = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <main className={layout}>
+      <aside>
+        <Sidebar />
+      </aside>
+      <article className={article}>
+        <Banner />
+      </article>
+    </main>
   );
 };
 

@@ -6,6 +6,7 @@ import Section from "../components/Section";
 import { layout, article } from "../styles/layout.module.scss";
 import "../styles/reset.css";
 import "../styles/style.css";
+import Footer from "../components/Footer";
 
 // markup
 const IndexPage = () => {
@@ -17,6 +18,7 @@ const IndexPage = () => {
       <article className={article}>
         <Banner />
         <Section />
+        <Footer />
       </article>
     </main>
   );

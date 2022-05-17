@@ -2,6 +2,7 @@ import * as React from "react";
 
 import Banner from "../components/Banner";
 import Sidebar from "../components/Sidebar";
+import Section from "../components/Section";
 import { layout, article } from "../styles/layout.module.scss";
 import "../styles/reset.css";
 import "../styles/style.css";
@@ -15,6 +16,7 @@ const IndexPage = () => {
       </aside>
       <article className={article}>
         <Banner />
+        <Section />
       </article>
     </main>
   );

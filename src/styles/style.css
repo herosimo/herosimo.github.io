@@ -6,7 +6,7 @@
   --border: #45454580;
 }
 
-body {
+html {
   font-family: "IBM Plex Mono", monospace;
   color: var(--text);
   font-size: 1.1vw;

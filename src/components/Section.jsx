@@ -16,6 +16,8 @@ const Section = () => {
           <ul>
             <li>UI/UX Design</li>
             <li>Web development</li>
+            <li>Web deliver</li>
+            <li>Web drawing</li>
           </ul>
           <p>A homepage design for restaurant based in Indonesia.</p>
           <a href="" target="_blank">

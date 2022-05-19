@@ -5,6 +5,15 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 1200px) {
+    min-height: 0;
+    padding: 40% 20% 15rem 20%;
+  }
+
+  @media (max-width: 767px) {
+    padding: 40% 0 15rem 0;
+  }
+
   span {
     font-family: "Shadows Into", sans-serif;
     font-weight: 700;
@@ -16,6 +25,11 @@
     color: red;
     letter-spacing: 0.2em;
     // text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      left: 0;
+      transform: unset;
+    }
   }
 
   h1 {
@@ -26,5 +40,9 @@
   p {
     width: 75%;
     margin-bottom: 1.25rem;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 }

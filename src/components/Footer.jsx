@@ -16,6 +16,12 @@ const Footer = () => {
             herosimo06@gmail.com
           </a>
         </li>
+        <li>
+          <h3>Linkedin</h3>
+          <a href="" target="_blank">
+            linkedin.com/herosimo
+          </a>
+        </li>
       </ul>
 
       <div className={legal}>

@@ -10,11 +10,24 @@
 .items {
   display: flex;
   margin: 2.5rem -1rem 0 -1rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .item {
   width: 50%;
-  margin: 0 1rem;
+  padding: 0 1rem;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 4rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 
   img {
     width: 100%;
@@ -30,13 +43,14 @@
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
 
     li {
       font-size: 1.25em;
       text-transform: uppercase;
-      margin-bottom: 1rem;
+      margin-bottom: 0.25rem;
 
       &::after {
         content: "";
@@ -59,6 +73,7 @@
   }
 
   p {
+    margin-top: 1rem;
     margin-bottom: 2rem;
   }
 
@@ -73,6 +88,10 @@
 .more {
   width: 50%;
   margin-top: 7.5rem;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 
   p {
     font-size: 1.5em;

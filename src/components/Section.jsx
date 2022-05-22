@@ -1,47 +1,41 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import { section, items, item, more } from "../styles/section.module.scss";
+import { section, items, itemClass, more } from "../styles/section.module.scss";
 
-const Section = () => {
+const Section = ({ data }) => {
   return (
     <section className={section}>
-      <h2>Selected projects</h2>
-      <p>A few of my favorite works.</p>
+      <h2>{data.sectionTitle}</h2>
+      <p>{data.sectionSubtitle}</p>
 
       <div className={items}>
-        <div className={item}>
-          <StaticImage src="../images/image.jpg" alt="" />
-          <h3>Ricebox</h3>
-          <ul>
-            <li>UI/UX Design</li>
-            <li>Web development</li>
-            <li>Web deliver</li>
-            <li>Web drawing</li>
-          </ul>
-          <p>A homepage design for restaurant based in Indonesia.</p>
-          <a href="" target="_blank">
-            View project
-          </a>
-        </div>
+        {data.items.map((item, i) => {
+          const image = getImage(item.itemImage);
 
-        <div className={item}>
-          <StaticImage src="../images/image.jpg" alt="" />
-          <h3>Ricebox</h3>
-          <ul>
-            <li>UI/UX Design</li>
-            <li>Web development</li>
-          </ul>
-          <p>A homepage design for restaurant based in Indonesia.</p>
-          <a href="" target="_blank">
-            View project
-          </a>
-        </div>
+          return (
+            <div key={i} className={itemClass}>
+              <GatsbyImage image={image} alt={item.itemTitle} style={{ width: "100%" }} />
+              <h3>{item.itemTitle}</h3>
+              <ul>
+                {item.itemTags.map((tag, i) => (
+                  <li key={i}>{tag}</li>
+                ))}
+              </ul>
+              <p>{item.itemSubtitle}</p>
+              <a href={item.itemLink} target="_blank" rel="noreferrer">
+                View project
+              </a>
+            </div>
+          );
+        })}
       </div>
 
       <div className={more}>
-        <p>I share more of my portfolio on Behance, come check it out!</p>
-        <a href="">Check out my Behance</a>
+        <p>{data.moreTitle}</p>
+        <a href={data.moreLink} target="_blank" rel="noreferrer">
+          {data.moreLinkTitle}
+        </a>
       </div>
     </section>
   );

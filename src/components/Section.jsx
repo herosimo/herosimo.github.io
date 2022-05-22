@@ -1,7 +1,7 @@
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { section, items, item, more } from "../styles/section.module.scss";
-import image from "../images/image.jpg";
 
 const Section = () => {
   return (
@@ -11,7 +11,7 @@ const Section = () => {
 
       <div className={items}>
         <div className={item}>
-          <img src={image} alt="" />
+          <StaticImage src="../images/image.jpg" alt="" />
           <h3>Ricebox</h3>
           <ul>
             <li>UI/UX Design</li>
@@ -26,7 +26,7 @@ const Section = () => {
         </div>
 
         <div className={item}>
-          <img src={image} alt="" />
+          <StaticImage src="../images/image.jpg" alt="" />
           <h3>Ricebox</h3>
           <ul>
             <li>UI/UX Design</li>

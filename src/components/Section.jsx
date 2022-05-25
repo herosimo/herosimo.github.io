@@ -1,7 +1,14 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-import { section, items, itemClass, more } from "../styles/section.module.scss";
+import {
+  section,
+  items,
+  itemClass,
+  imageWrapper,
+  imageClass,
+  more,
+} from "../styles/section.module.scss";
 
 const Section = ({ data }) => {
   return (
@@ -15,7 +22,10 @@ const Section = ({ data }) => {
 
           return (
             <div key={i} className={itemClass}>
-              <GatsbyImage image={image} alt={item.itemTitle} style={{ width: "100%" }} />
+              <div className={imageWrapper}>
+                <GatsbyImage image={image} alt={item.itemTitle} className={imageClass} />
+              </div>
+
               <h3>{item.itemTitle}</h3>
               <ul>
                 {item.itemTags.map((tag, i) => (

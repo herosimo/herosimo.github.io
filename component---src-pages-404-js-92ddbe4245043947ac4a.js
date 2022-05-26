@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgithub_pages=self.webpackChunkgithub_pages||[]).push([[883],{429:function(e,n,t){t.r(n);var u=t(7294);n.default=function(){return u.createElement("main",null,u.createElement("h1",null,"Page Note Found!"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-92ddbe4245043947ac4a.js.map

@@ -12,7 +12,7 @@ import play from "../images/play.svg";
 const Sidebar = () => {
   const data = useStaticQuery(graphql`
     query {
-      mdx(id: { eq: "01fbae03-5953-5e1d-bb01-d2321705e183" }) {
+      mdx(slug: { eq: "layout" }) {
         frontmatter {
           behance
           github

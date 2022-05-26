@@ -4,7 +4,6 @@ module.exports = {
     description: `I am an Indonesian front-end developer and web designer. You can find both my personal and professional works on this website.`,
     author: `Herosimo Sribiko`,
     keywords: `personal website, portfolio, web developer, web designer`,
-    image: `src/images/screenshot.jpg`,
     siteUrl: `https://herosimo.github.io`,
   },
   plugins: [

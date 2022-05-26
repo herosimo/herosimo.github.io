@@ -3,6 +3,8 @@ import Helmet from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 
+import screenshot from "../images/screenshot.jpg";
+
 const Seo = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -13,7 +15,7 @@ const Seo = ({ description, lang, meta, title }) => {
             description
             author
             keywords
-            image
+            siteUrl
           }
         }
       }
@@ -23,7 +25,7 @@ const Seo = ({ description, lang, meta, title }) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const keywords = site.siteMetadata.keywords;
-  const image = site.siteMetadata.image;
+  const image = `${site.siteMetadata.siteUrl}${screenshot}`;
 
   return (
     <Helmet

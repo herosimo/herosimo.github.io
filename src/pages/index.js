@@ -10,7 +10,7 @@ import Seo from "../components/Seo";
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      mdx(id: { eq: "6823a5d0-e498-55bb-98c9-66a5ea89aa31" }) {
+      mdx(slug: { eq: "" }) {
         frontmatter {
           sections {
             moreLink

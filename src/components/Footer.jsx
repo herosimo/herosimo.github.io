@@ -21,6 +21,13 @@ const Footer = () => {
     }
   `);
 
+  const scrolToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className={footer}>
       <h2>{data.mdx.frontmatter.footerTitle}</h2>
@@ -41,7 +48,7 @@ const Footer = () => {
 
       <div className={legal}>
         <p>Made in 2022</p>
-        <div>
+        <div role="button" tabIndex={0} onClick={scrolToTop} onKeyDown={scrolToTop}>
           <img src={play} alt="play" />
         </div>
       </div>

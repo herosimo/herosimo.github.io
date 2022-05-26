@@ -83,23 +83,12 @@
   a {
     font-weight: 700;
     font-size: 1.25em;
-    text-decoration: none;
     color: var(--text);
   }
 }
 
-.imageWrapper {
-  position: relative;
-  padding-bottom: 62.5%;
-  margin-bottom: 2rem;
-}
-
 .imageClass {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  margin-bottom: 2rem;
 }
 
 .more {
@@ -119,7 +108,6 @@
   a {
     font-size: 1.25em;
     font-weight: 700;
-    text-decoration: none;
     color: var(--text);
 
     &::after {

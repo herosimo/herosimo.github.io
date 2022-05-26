@@ -29,3 +29,11 @@ h6 {
   line-height: 1.25;
   color: var(--heading);
 }
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

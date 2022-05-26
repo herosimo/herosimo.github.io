@@ -1,0 +1,126 @@
+.section {
+  margin-bottom: 15rem;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.25rem;
+    width: 50%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  & > p {
+    width: 50%;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem 0 -1rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.itemClass {
+  width: 50%;
+  padding: 0 1rem;
+  margin-top: 2.5rem;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 1.25em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: -0.175em;
+        display: inline-block;
+        width: 0.4em;
+        height: 0.4em;
+        margin: 0 1.25rem;
+        background-color: var(--text);
+        border-radius: 50%;
+      }
+
+      &:last-of-type {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 1.25em;
+    color: var(--text);
+  }
+}
+
+.imageClass {
+  margin-bottom: 2rem;
+}
+
+.more {
+  width: 50%;
+  margin-top: 7.5rem;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  a {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--text);
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url("../images/plays.svg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;
+      width: 2em;
+      height: 0.5em;
+      margin-left: 1rem;
+      opacity: 0.75;
+    }
+  }
+}
